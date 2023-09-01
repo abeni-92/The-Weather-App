@@ -43,7 +43,7 @@ search.addEventListener("keydown", (e) => {
 
 async function weatherSearch (query="addis ababa") {
 	try {
-		const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=63c24c6f33f742c3880114012232208&q=${query}&days=8`, {mode: 'cors'});
+		const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=63c24c6f33f742c3880114012232208&q=${query}&days=8`, {mode: 'cors'});
 		const result = await response.json();
 	
 		// console.log(result);
