@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="script.js" defer></script>
+	<title>Weather App</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+	<main>
+		<div class="top">
+			<div class="left">
+				<h2 id="condition-text">Light Rain</h2>
+				<h5 id="name">Addis Ababa</h5>
+				<p id="date">Monday, 28th Aug 2023</p>
+				<h1 id="temp"> 21 °C</h1>
+				<a href="#" id="display">Display <span> °F</span></a>
+				<img src="images/logo.png" id="img" class="top-image" width="100px" height="100px">
+				<div class="search-bar">
+					<input type="text" placeholder="Search Location ... " id="search">
+					<i class="fa-solid fa-magnifying-glass search-icon"></i>		
+				</div>
+				<p class="error-message">Location does not exist! try again with a city or country!</p>
+			</div>
+			<div class="right">
+				<article>
+					<img src="images/thermometer.png" alt="feels like" width="40px" height="40px">
+					<div>
+						<p>Feels like</p>
+						<h5 id="feels-like">21 °C</h5>
+					</div>
+				</article>
+				<article>
+					<img src="images/humidity.png" alt="wind speed" width="40px" height="40px">
+					<div>
+						<p>Humidity</p>
+						<h5 id="humidity">14 km/h</h5>	
+					</div>
+				</article>
+				
+				<article>
+					<img src="images/rain.png" alt="chance of rain" width="40px" height="40px">
+					<div>
+						<p>Chance of Rain</p>
+						<h5 id="chance-of-rain">74 %</h5>	
+					</div>				
+				</article>
+				<article>
+					<img src="images/wind.png" alt="wind speed" width="40px" height="40px">
+					<div>
+						<p>Wind Speed</p>
+						<h5 id="wind-speed">14 km/h</h5>	
+					</div>
+				</article>
+				
+			</div>
+		</div>
+
+		<div class="bottom-container">
+			<div class="btns">
+				<a href="#" id="daily" class="active">Daily</a>
+				<a href="#" id="hourly" class="">Hourly</a>
+			</div>
+			<div class="bottom-body">
+				
+			</div>
+		</div>
+
+		<div class="footer">
+			<p class="footer">Photo by <a href="https://unsplash.com/@adinc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Altınay Dinç</a> on <a href="https://unsplash.com/photos/LluELtL5mK4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+			</p>
+		</div>
+	</main>
+</body>
+</html>
