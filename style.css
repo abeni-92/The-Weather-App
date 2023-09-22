@@ -58,7 +58,7 @@ a {
 }
 
 main {
-  padding: 50px;
+  padding: 60px;
 }
 
 .top {
@@ -73,6 +73,14 @@ main {
 .top-image {
   display: block;
   margin: 20px 0;
+}
+
+#display {
+  color: #be2b2b;
+}
+
+#display:hover {
+  color: #f03a3a;
 }
 
 .search-bar {
@@ -101,9 +109,9 @@ main {
 
 .error-message {
   display: none;
-  padding: 10px;
-  color: red;
-  border: 1px solid red;
+  padding: 20px;
+  color: #fff;
+  background-color: red;
   margin: 20px 0;
 }
 
@@ -116,7 +124,7 @@ main {
 article {
   flex: 1;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 /******************* Bottom part ***********************/
@@ -136,7 +144,7 @@ article {
 }
 
 .bottom-body {
-  animation: down-animation 1s ease-in;
+  animation: down-animation 1s ease-in-out;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(7, 1fr);
@@ -177,6 +185,53 @@ article {
   color: #040720;
 }
 
+/************************ Responsive Design ***************************/
+@media screen and (max-width: 500px) {
+  main {
+    padding: 60px 20px;
+  }
+  h4 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  h3 {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .top .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bottom-container .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-container .bottom-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .hourly {
+    grid-template-columns: repeat(24, 1fr);
+    gap: 30px;
+  }
+  .footer p {
+    left: 25vw;
+  }
+}
 /***************************** Animations ****************************/
 @keyframes starting {
   0% {
